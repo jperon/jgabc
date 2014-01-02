@@ -422,8 +422,8 @@ $(function() {
     var gabc = $('#editor').val(),
         header = getHeader(gabc);
     if(!header.name) header.name = '';
-    if(!header['%font']) header['%font'] = 'GaramondPremierPro';
-    if(!header['%width']) header['%width'] = '7.5';
+    if(!header['%font']) header['%font'] = 'LinLibertineO';
+    if(!header['%width']) header['%width'] = '124';
     return gabc = header + gabc.slice(header.original.length);
   }
   $('#lnkPdf').click(function(e){

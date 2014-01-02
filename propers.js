@@ -943,8 +943,8 @@ $(function(){
           header = getHeader(gabc);
       if($includePart.parent('li').hasClass('ui-state-disabled') || includePropers.indexOf(part)<0) return;
       header.name = '';
-      header['%font'] = 'GaramondPremierPro';
-      header['%width'] = '7.5';
+      header['%font'] = 'LinLibertineO';
+      header['%width'] = '124';
       gabc = header + gabc.slice(header.original.length);
       result.push(gabc);
     });
