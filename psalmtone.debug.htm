@@ -720,6 +720,7 @@ $(function() {
     gabcStar = localStorage.gabcStar;
   } else {
     gabcStar = '<v>\\greheightstar</v>'
+    gabcStar = '*'
   }
   $("#txtGabcStar").val(gabcStar).keyup(updateGabcStar);
   $("label[title][for]").each(function() {

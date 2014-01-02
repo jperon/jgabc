@@ -16,6 +16,7 @@ if(localStorage.gabcStar) {
   gabcStar = localStorage.gabcStar;
 } else {
   gabcStar = '<v>\\greheightstar</v>'
+  gabcStar = '*'
 }
 String.prototype.format = function(keys){
   return this.replace(/\$([a-z]+)/gi,function(e){return keys[e.slice(1)]||e;});

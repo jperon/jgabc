@@ -407,6 +407,7 @@ $(function() {
     gabcStar = localStorage.gabcStar;
   } else {
     gabcStar = '<v>\\greheightstar</v>'
+    gabcStar = '*'
   }
   $("#txtGabcStar").val(gabcStar).keyup(updateGabcStar);
   $("#chant-parent2").resizable({handles:"e"});
@@ -430,7 +431,7 @@ $(function() {
     if(e && typeof(e.preventDefault)=="function"){
       e.preventDefault();
     }
-    $('#pdfForm').attr('action','http://illuminarepublications.com/gregorio/#' + encodeURI(result)).submit();
+    $('#pdfForm').attr('action','http://localhost/gregoriophp/#' + encodeURI(result)).submit();
   });
   $('#lnkPdfDirect').click(function(e){
     var gabcs=[getGabc()];
