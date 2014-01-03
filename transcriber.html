@@ -17,6 +17,7 @@
 <style>
 textarea{
   padding:0px;
+  float:right;
 }
 .dp{
   padding-right:16px;
@@ -29,9 +30,10 @@ td{
 }
 #chant-parent2{
   width:10.3in;
-  max-width:100%;
+  max-width:66%;
   margin:auto;
   height:100%;
+  float:right;
 }
 #chant-parent{
   border:1px solid #aaa;
@@ -50,6 +52,7 @@ input[type=checkbox]{
 }
 textarea{
   resize:none;
+  float:right;
 }
 </style>
 <form id="pdfForm" target="_blank" method="get" action="http://localhost/gregoriophp/">
@@ -66,7 +69,10 @@ textarea{
   <input type="hidden" id="pdff_fontsize" value="12" name="fontsize"/>
   <input type="hidden" id="pdff_fmt" name="fmt" value="pdf"/>
 </form>
-<div class="print-hide">
+
+
+
+<div class="print-hide" style="width:66%;float:right">
 <div style="width:100%;margin-bottom:5px">
 <b>GABC Transcription Tool</b>
   <a href="psalmtone.htm">Psalm Tone Tool</a>
@@ -80,9 +86,9 @@ textarea{
 <div style="width:100%;text-align:center;padding-bottom:4pt"><a href="#" id="lnkToggleMode">Show integrated GABC</a></div>
 <div id="blankSpace" style="height:193px;">
 
-<div id="twoBoxes" style="position:absolute;width:100%;overflow:hidden">
+<div id="twoBoxes" style="width:100%;overflow:hidden;float:center">
 <div class="dp">
-<div style="margin:auto;width:10.3in;max-width:100%"><div style="margin-right:-4px">
+<div style="margin:auto;width:10.3in;max-width:100%"><div style="margin-left:4px;margin-right:-4px">
 <table width="100%" style="margin-left:-2px;margin-top:-2px">
 <tr><td width="50%">
   <label for="hymntext" title="This text box is for the text of the chant.  If the English checkbox is not checked it will be assumed to be Latin.">Text</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="cbElisionHasNote"/><label for="cbElisionHasNote" title="You can signify an elision in the text by putting a vowel in parentheses.  If this box is checked, the elision will still have a punctum associated with it; if this is unchecked, that syllable will have no punctum.">Use puncta for elisions</label>
@@ -98,7 +104,7 @@ textarea{
 </table>
 </div>
 </div></div></div>
-<div id="oneBox" style="display:none;position:absolute;width:100%">
+<div id="oneBox" style="display:none;width:100%;float:center">
 <div class="dp">
 <div style="width:10.3in;max-width:100%;margin:auto">
 <label for="editor" title="You can put GABC headers in this text box if you want them included in the GABC file download link below.  Any headers you type in will persist in local storage between sessions.">Integrated GABC</label>
