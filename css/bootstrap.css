@@ -3323,7 +3323,7 @@ button.close {
 }
 
 .btn-mini {
-  padding: 0 1px;
+  padding: 0 0px;
   font-size: 10.5px;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;

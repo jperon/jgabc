@@ -99,231 +99,197 @@ textarea{
 <!-- Ceci est importé depuis Creat'Partition -->
 
 <div id="groupes" class="btn-groups">
-<b>Palette</b>
-<div id="groupe_1" class="btn-mini-group">
-<a>Hauteurs</a></br>
-  <button class="btn-mini" onclick="ecrirepartition('a')"><img src="img/note1.png" class="img"></button>
-  <button class="btn-mini" onclick="ecrirepartition('b')"><img src="img/note2.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition('c')"><img src="img/note3.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition('d')"><img src="img/note4.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition('e')"><img src="img/note5.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition('f')"><img src="img/note6.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition('g')"><img src="img/note7.png" class="img"></button>
-    <button class="btn-mini"onclick="ecrirepartition('h')"><img src="img/note8.png" class="img"></button>
-    <button class="btn-mini"onclick="ecrirepartition('i')"><img src="img/note9.png" class="img"></button>
-    <button class="btn-mini"onclick="ecrirepartition('j')"><img src="img/note10.png" class="img"></button>
-    <button class="btn-mini"onclick="ecrirepartition('k')"><img src="img/note11.png" class="img"></button>
-    <button class="btn-mini"onclick="ecrirepartition('l')"><img src="img/note12.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition('m')"><img src="img/note13.png" class="img"></button>
-</div>
+    <b>Palette</b>
+    <div id="groupe_1" class="btn-mini-group">
+        <div style="float:left">
+            <a>Hauteurs</a></br>
+            <button class="btn-mini" onclick="ecrirepartition('a')"><img src="img/note1.png" class="img"></button>
+            <button class="btn-mini" onclick="ecrirepartition('b')"><img src="img/note2.png" class="img"></button>
+            <button class="btn-mini" onclick="ecrirepartition('c')"><img src="img/note3.png" class="img"></button>
+            <button class="btn-mini" onclick="ecrirepartition('d')"><img src="img/note4.png" class="img"></button>
+            <button class="btn-mini" onclick="ecrirepartition('e')"><img src="img/note5.png" class="img"></button>
+            <button class="btn-mini" onclick="ecrirepartition('f')"><img src="img/note6.png" class="img"></button>
+            <button class="btn-mini" onclick="ecrirepartition('g')"><img src="img/note7.png" class="img"></button>
+            <button class="btn-mini"onclick="ecrirepartition('h')"><img src="img/note8.png" class="img"></button>
+            <button class="btn-mini"onclick="ecrirepartition('i')"><img src="img/note9.png" class="img"></button>
+            <button class="btn-mini"onclick="ecrirepartition('j')"><img src="img/note10.png" class="img"></button>
+            <button class="btn-mini"onclick="ecrirepartition('k')"><img src="img/note11.png" class="img"></button>
+            <button class="btn-mini"onclick="ecrirepartition('l')"><img src="img/note12.png" class="img"></button>
+            <button class="btn-mini" onclick="ecrirepartition('m')"><img src="img/note13.png" class="img"></button>
+        </div>
+        <div style="float:right">
+            <a>Durées</a><br />
+            <div><button class="btn" onclick="ecrirepartition('.')">·</button></div>
+            <div>
+                <button class="btn" onclick="ecrirepartition('_')">−</button>
+                <button class="btn" onclick="ecrirepartition('\'')">'</button>
+            </div><br>
+            <div><button class="btn" onclick="ecrirepartition(' ')">Syllabe <br> suivante</button></div>
+        </div>
+    </div>
 
-<br>
-<div id="groupe_2" class="btn-mini-group">
-<div style="float:left">
-    <a >Altérations</a><br />
-	<button class="btn-mini" onclick="ecrirepartition('x')" style="font-size:18px"><img src="img/bemol.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition('y')" style="font-size:18px"><img src="img/becarre.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition('#')" style="font-size:18px"><img src="img/dieze.png" class="img"></button>
-</div>
-<div style="float:right">
-	<button class="btn" onclick="ecrirepartition('.')">Point</button>
-    <button class="btn" onclick="ecrirepartition(' ')">Espace</button>
-</div>
-</div>
+    <br>
+    <div id="groupe_2" class="btn-mini-group">
+        <a >Altérations</a><br />
+        <button class="btn-mini" onclick="ecrirepartition('x')" style="font-size:18px"><img src="img/bemol.png" class="img"></button>
+        <button class="btn-mini" onclick="ecrirepartition('y')" style="font-size:18px"><img src="img/becarre.png" class="img"></button>
+        <button class="btn-mini" onclick="ecrirepartition('#')" style="font-size:18px"><img src="img/dieze.png" class="img"></button>
+    </div>
 
-<br></br></br></br></br>
-<div id="groupe_3" class="btn-mini-group">
-<a >Neumes</a><br />
-<div class="btn-group">
-  <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume1.png" class="img"></button>
-   <ul class="dropdown-menu">
-                  	<button class="btn-mini" onclick="ecrirepartition('a')"><img src="img/note1.png" class="img"></button>
-				  	<button class="btn-mini" onclick="ecrirepartition('b')"><img src="img/note2.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('c')"><img src="img/note3.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('d')"><img src="img/note4.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('e')"><img src="img/note5.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('f')"><img src="img/note6.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('g')"><img src="img/note7.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('h')"><img src="img/note8.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('i')"><img src="img/note9.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('j')"><img src="img/note10.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('k')"><img src="img/note11.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('l')"><img src="img/note12.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('m')"><img src="img/note13.png" class="img"></button>
-   </ul>
-   </div>
-   <div class="btn-group">
-   <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume2.png" class="img"></button>
-    <ul class="dropdown-menu">
-                  	<button class="btn-mini" onclick="ecrirepartition('A')"><img src="img/note1.png" class="img"></button>
-				  	<button class="btn-mini" onclick="ecrirepartition('B')"><img src="img/note2.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('C')"><img src="img/note3.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('D')"><img src="img/note4.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('E')"><img src="img/note5.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('F')"><img src="img/note6.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('G')"><img src="img/note7.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('H')"><img src="img/note8.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('I')"><img src="img/note9.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('J')"><img src="img/note10.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('K')"><img src="img/note11.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('L')"><img src="img/note12.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('M')"><img src="img/note13.png" class="img"></button>
-	</ul>
-   </div>
-     <div class="btn-group">
-   <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume3.png" class="img"></button>
-    <ul class="dropdown-menu">
-                  	<button class="btn-mini" onclick="ecrirepartition('A~')"><img src="img/note1.png" class="img"></button>
-				  	<button class="btn-mini" onclick="ecrirepartition('B~')"><img src="img/note2.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('C~')"><img src="img/note3.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('D~')"><img src="img/note4.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('E~')"><img src="img/note5.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('F~')"><img src="img/note6.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('G~')"><img src="img/note7.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('H~')"><img src="img/note8.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('I~')"><img src="img/note9.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('J~')"><img src="img/note10.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('K~')"><img src="img/note11.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('L~')"><img src="img/note12.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('M~')"><img src="img/note13.png" class="img"></button>
-	</ul>
-   </div>
+    <br>
+    <div id="groupe_3" class="btn-mini-group">
+        <a >Neumes simples</a><br />
         <div class="btn-group">
-   <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume4.png" class="img"></button>
-    <ul class="dropdown-menu">
-                  	<button class="btn-mini" onclick="ecrirepartition('A>')"><img src="img/note1.png" class="img"></button>
-				  	<button class="btn-mini" onclick="ecrirepartition('B>')"><img src="img/note2.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('C>')"><img src="img/note3.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('D>')"><img src="img/note4.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('E>')"><img src="img/note5.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('F>')"><img src="img/note6.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('G>')"><img src="img/note7.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('H>')"><img src="img/note8.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('I>')"><img src="img/note9.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('J>')"><img src="img/note10.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('K>')"><img src="img/note11.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('L>')"><img src="img/note12.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('M>')"><img src="img/note13.png" class="img"></button>
-	</ul>
-   </div>
-   <div class="btn-group">
-   <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume5.png" class="img"></button>
-    <ul class="dropdown-menu">
-                  	<button class="btn-mini" onclick="ecrirepartition('a~')"><img src="img/note1.png" class="img"></button>
-				  	<button class="btn-mini" onclick="ecrirepartition('b~')"><img src="img/note2.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('c~')"><img src="img/note3.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('d~')"><img src="img/note4.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('e~')"><img src="img/note5.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('f~')"><img src="img/note6.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('g~')"><img src="img/note7.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('h~')"><img src="img/note8.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('i~')"><img src="img/note9.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('j~')"><img src="img/note10.png" class="img"></button>
-				    </br>
-				    <button class="btn-mini" onclick="ecrirepartition('k~')"><img src="img/note11.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('l~')"><img src="img/note12.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('m~')"><img src="img/note13.png" class="img"></button>
-	</ul>
-   </div>
+            <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume1.png" class="img"></button>
+                <ul class="dropdown-menu">
+                    <button class="btn-mini" onclick="ecrirepartition('a')"><img src="img/note1.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('b')"><img src="img/note2.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('c')"><img src="img/note3.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('d')"><img src="img/note4.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('e')"><img src="img/note5.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('f')"><img src="img/note6.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('g')"><img src="img/note7.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('h')"><img src="img/note8.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('i')"><img src="img/note9.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('j')"><img src="img/note10.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('k')"><img src="img/note11.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('l')"><img src="img/note12.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('m')"><img src="img/note13.png" class="img"></button>
+                </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume2.png" class="img"></button>
+                <ul class="dropdown-menu">
+                    <button class="btn-mini" onclick="ecrirepartition('A')"><img src="img/note1.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('B')"><img src="img/note2.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('C')"><img src="img/note3.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('D')"><img src="img/note4.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('E')"><img src="img/note5.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('F')"><img src="img/note6.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('G')"><img src="img/note7.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('H')"><img src="img/note8.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('I')"><img src="img/note9.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('J')"><img src="img/note10.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('K')"><img src="img/note11.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('L')"><img src="img/note12.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('M')"><img src="img/note13.png" class="img"></button>
+                </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume12.png" class="img"></button>
+                <ul class="dropdown-menu">
+                    <button class="btn-mini" onclick="ecrirepartition('av')"><img src="img/note1.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('bv')"><img src="img/note2.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('cv')"><img src="img/note3.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('dv')"><img src="img/note4.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('ev')"><img src="img/note5.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('fv')"><img src="img/note6.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('gv')"><img src="img/note7.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('hv')"><img src="img/note8.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('iv')"><img src="img/note9.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('jv')"><img src="img/note10.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('kv')"><img src="img/note11.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('lv')"><img src="img/note12.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('mv')"><img src="img/note13.png" class="img"></button>
+                </ul>
+        </div>
+    </div>
+    <a >Liquescences</a><br />
     <div class="btn-group">
-   <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume6.png" class="img"></button>
-    <ul class="dropdown-menu">
-                  	<button class="btn-mini" onclick="ecrirepartition('a<')"><img src="img/note1.png" class="img"></button>
-				  	<button class="btn-mini" onclick="ecrirepartition('b<')"><img src="img/note2.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('c<')"><img src="img/note3.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('d<')"><img src="img/note4.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('e<')"><img src="img/note5.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('f<')"><img src="img/note6.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('g<')"><img src="img/note7.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('h<')"><img src="img/note8.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('i<')"><img src="img/note9.png" class="img"></button>
-				    <br></br>
-				    <button class="btn-mini" onclick="ecrirepartition('j<')"><img src="img/note10.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('k<')"><img src="img/note11.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('l<')"><img src="img/note12.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('m<')"><img src="img/note13.png" class="img"></button>
-	</ul>
-   </div>
+            <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume3.png" class="img"></button>
+                <ul class="dropdown-menu">
+                    <button class="btn-mini" onclick="ecrirepartition('A~')"><img src="img/note1.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('B~')"><img src="img/note2.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('C~')"><img src="img/note3.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('D~')"><img src="img/note4.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('E~')"><img src="img/note5.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('F~')"><img src="img/note6.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('G~')"><img src="img/note7.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('H~')"><img src="img/note8.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('I~')"><img src="img/note9.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('J~')"><img src="img/note10.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('K~')"><img src="img/note11.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('L~')"><img src="img/note12.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('M~')"><img src="img/note13.png" class="img"></button>
+                </ul>
+    </div>
     <div class="btn-group">
-   <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume7.png" class="img"></button>
-    <ul class="dropdown-menu">
-                  	<button class="btn-mini" onclick="ecrirepartition('a>')"><img src="img/note1.png" class="img"></button>
-				  	<button class="btn-mini" onclick="ecrirepartition('b>')"><img src="img/note2.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('c>')"><img src="img/note3.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('d>')"><img src="img/note4.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('e>')"><img src="img/note5.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('f>')"><img src="img/note6.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('g>')"><img src="img/note7.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('h>')"><img src="img/note8.png" class="img"></button>
-				    <br></br>
-				    <button class="btn-mini" onclick="ecrirepartition('i>')"><img src="img/note9.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('j>')"><img src="img/note10.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('k>')"><img src="img/note11.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('l>')"><img src="img/note12.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('m>')"><img src="img/note13.png" class="img"></button>
-	</ul>
-   </div>
-    <br></br>
+        <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume4.png" class="img"></button>
+            <ul class="dropdown-menu">
+                    <button class="btn-mini" onclick="ecrirepartition('A>')"><img src="img/note1.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('B>')"><img src="img/note2.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('C>')"><img src="img/note3.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('D>')"><img src="img/note4.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('E>')"><img src="img/note5.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('F>')"><img src="img/note6.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('G>')"><img src="img/note7.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('H>')"><img src="img/note8.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('I>')"><img src="img/note9.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('J>')"><img src="img/note10.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('K>')"><img src="img/note11.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('L>')"><img src="img/note12.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('M>')"><img src="img/note13.png" class="img"></button>
+            </ul>
+    </div>
     <div class="btn-group">
-   <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume8.png" class="img"></button>
-    <ul class="dropdown-menu">
-                  	<button class="btn-mini" onclick="ecrirepartition('ao')"><img src="img/note1.png" class="img"></button>
-				  	<button class="btn-mini" onclick="ecrirepartition('bo')"><img src="img/note2.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('co')"><img src="img/note3.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('do')"><img src="img/note4.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('eo')"><img src="img/note5.png" class="img"></button>
-				    <br></br>
-				    <button class="btn-mini" onclick="ecrirepartition('fo')"><img src="img/note6.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('go')"><img src="img/note7.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('ho')"><img src="img/note8.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('io')"><img src="img/note9.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('jo')"><img src="img/note10.png" class="img"></button>
-				    <br></br>
-				    <button class="btn-mini" onclick="ecrirepartition('ko')"><img src="img/note11.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('lo')"><img src="img/note12.png" class="img"></button>
-					<button class="btn-mini" onclick="ecrirepartition('mo')"><img src="img/note13.png" class="img"></button>
-	
-	</ul>
-   </div>
+        <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume5.png" class="img"></button>
+            <ul class="dropdown-menu">
+                    <button class="btn-mini" onclick="ecrirepartition('a~')"><img src="img/note1.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('b~')"><img src="img/note2.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('c~')"><img src="img/note3.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('d~')"><img src="img/note4.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('e~')"><img src="img/note5.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('f~')"><img src="img/note6.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('g~')"><img src="img/note7.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('h~')"><img src="img/note8.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('i~')"><img src="img/note9.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('j~')"><img src="img/note10.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('k~')"><img src="img/note11.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('l~')"><img src="img/note12.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('m~')"><img src="img/note13.png" class="img"></button>
+            </ul>
+    </div>
     <div class="btn-group">
-   <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume9.png" class="img"></button>
-    <ul class="dropdown-menu">
-                  	<button class="btn-mini" onclick="ecrirepartition('ao~')"><img src="img/note1.png" class="img"></button>
-				  	<button class="btn-mini" onclick="ecrirepartition('bo~')"><img src="img/note2.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('co~')"><img src="img/note3.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('do~')"><img src="img/note4.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('eo~')"><img src="img/note5.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('fo~')"><img src="img/note6.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('go~')"><img src="img/note7.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('ho~')"><img src="img/note8.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('io~')"><img src="img/note9.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('jo~')"><img src="img/note10.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('ko~')"><img src="img/note11.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('lo~')"><img src="img/note12.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('mo~')"><img src="img/note13.png" class="img"></button>
-	</ul>
-   </div>
-      <div class="btn-group">
-   <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume10.png" class="img"></button>
-    <ul class="dropdown-menu">
-                  	<button class="btn-mini" onclick="ecrirepartition('ao<')"><img src="img/note1.png" class="img"></button>
-				  	<button class="btn-mini" onclick="ecrirepartition('bo')"><img src="img/note2.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('co<')"><img src="img/note3.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('do<')"><img src="img/note4.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('eo<')"><img src="img/note5.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('fo<')"><img src="img/note6.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('go<')"><img src="img/note7.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('ho<')"><img src="img/note8.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('io<')"><img src="img/note9.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('jo<')"><img src="img/note10.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('ko<')"><img src="img/note11.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('lo<')"><img src="img/note12.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('mo<')"><img src="img/note13.png" class="img"></button>
-	</ul>
-   </div>
-      <div class="btn-group">
-   <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume11.png" class="img"></button>
-    <ul class="dropdown-menu">
+        <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume6.png" class="img"></button>
+            <ul class="dropdown-menu">
+                    <button class="btn-mini" onclick="ecrirepartition('a<')"><img src="img/note1.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('b<')"><img src="img/note2.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('c<')"><img src="img/note3.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('d<')"><img src="img/note4.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('e<')"><img src="img/note5.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('f<')"><img src="img/note6.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('g<')"><img src="img/note7.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('h<')"><img src="img/note8.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('i<')"><img src="img/note9.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('j<')"><img src="img/note10.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('k<')"><img src="img/note11.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('l<')"><img src="img/note12.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('m<')"><img src="img/note13.png" class="img"></button>
+            </ul>
+    </div>
+    <div class="btn-group">
+        <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume7.png" class="img"></button>
+            <ul class="dropdown-menu">
+                    <button class="btn-mini" onclick="ecrirepartition('a>')"><img src="img/note1.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('b>')"><img src="img/note2.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('c>')"><img src="img/note3.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('d>')"><img src="img/note4.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('e>')"><img src="img/note5.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('f>')"><img src="img/note6.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('g>')"><img src="img/note7.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('h>')"><img src="img/note8.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('i>')"><img src="img/note9.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('j>')"><img src="img/note10.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('k>')"><img src="img/note11.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('l>')"><img src="img/note12.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('m>')"><img src="img/note13.png" class="img"></button>
+            </ul>
+    </div>
+    <br>
+    <a >Quilisma, oriscus et strophas</a><br />
+        <div class="btn-group">
+            <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume11.png" class="img"></button>
+                <ul class="dropdown-menu">
                   	<button class="btn-mini" onclick="ecrirepartition('aw')"><img src="img/note1.png" class="img"></button>
 				  	<button class="btn-mini" onclick="ecrirepartition('bw')"><img src="img/note2.png" class="img"></button>
 				    <button class="btn-mini" onclick="ecrirepartition('cw')"><img src="img/note3.png" class="img"></button>
@@ -337,29 +303,65 @@ textarea{
 				    <button class="btn-mini" onclick="ecrirepartition('kw')"><img src="img/note11.png" class="img"></button>
 				    <button class="btn-mini" onclick="ecrirepartition('lw')"><img src="img/note12.png" class="img"></button>
 				    <button class="btn-mini" onclick="ecrirepartition('mw')"><img src="img/note13.png" class="img"></button>
-	</ul>
-   </div>
-      <div class="btn-group">
-   <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume12.png" class="img"></button>
-    <ul class="dropdown-menu">
-                  	<button class="btn-mini" onclick="ecrirepartition('av')"><img src="img/note1.png" class="img"></button>
-				  	<button class="btn-mini" onclick="ecrirepartition('bv')"><img src="img/note2.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('cv')"><img src="img/note3.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('dv')"><img src="img/note4.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('ev')"><img src="img/note5.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('fv')"><img src="img/note6.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('gv')"><img src="img/note7.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('hv')"><img src="img/note8.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('iv')"><img src="img/note9.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('jv')"><img src="img/note10.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('kv')"><img src="img/note11.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('lv')"><img src="img/note12.png" class="img"></button>
-				    <button class="btn-mini" onclick="ecrirepartition('mv')"><img src="img/note13.png" class="img"></button>
-	</ul>
-   </div>
-       <div class="btn-group">
-   <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume13.png" class="img"></button>
-    <ul class="dropdown-menu">
+                </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume8.png" class="img"></button>
+                <ul class="dropdown-menu">
+                  	<button class="btn-mini" onclick="ecrirepartition('ao')"><img src="img/note1.png" class="img"></button>
+				  	<button class="btn-mini" onclick="ecrirepartition('bo')"><img src="img/note2.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('co')"><img src="img/note3.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('do')"><img src="img/note4.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('eo')"><img src="img/note5.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('fo')"><img src="img/note6.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('go')"><img src="img/note7.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('ho')"><img src="img/note8.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('io')"><img src="img/note9.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('jo')"><img src="img/note10.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('ko')"><img src="img/note11.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('lo')"><img src="img/note12.png" class="img"></button>
+					<button class="btn-mini" onclick="ecrirepartition('mo')"><img src="img/note13.png" class="img"></button>
+                </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume9.png" class="img"></button>
+                <ul class="dropdown-menu">
+                  	<button class="btn-mini" onclick="ecrirepartition('ao~')"><img src="img/note1.png" class="img"></button>
+				  	<button class="btn-mini" onclick="ecrirepartition('bo~')"><img src="img/note2.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('co~')"><img src="img/note3.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('do~')"><img src="img/note4.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('eo~')"><img src="img/note5.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('fo~')"><img src="img/note6.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('go~')"><img src="img/note7.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('ho~')"><img src="img/note8.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('io~')"><img src="img/note9.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('jo~')"><img src="img/note10.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('ko~')"><img src="img/note11.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('lo~')"><img src="img/note12.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('mo~')"><img src="img/note13.png" class="img"></button>
+                </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume10.png" class="img"></button>
+                <ul class="dropdown-menu">
+                  	<button class="btn-mini" onclick="ecrirepartition('ao<')"><img src="img/note1.png" class="img"></button>
+				  	<button class="btn-mini" onclick="ecrirepartition('bo')"><img src="img/note2.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('co<')"><img src="img/note3.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('do<')"><img src="img/note4.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('eo<')"><img src="img/note5.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('fo<')"><img src="img/note6.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('go<')"><img src="img/note7.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('ho<')"><img src="img/note8.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('io<')"><img src="img/note9.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('jo<')"><img src="img/note10.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('ko<')"><img src="img/note11.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('lo<')"><img src="img/note12.png" class="img"></button>
+				    <button class="btn-mini" onclick="ecrirepartition('mo<')"><img src="img/note13.png" class="img"></button>
+                </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume13.png" class="img"></button>
+                <ul class="dropdown-menu">
                   	<button class="btn-mini" onclick="ecrirepartition('as')"><img src="img/note1.png" class="img"></button>
 				  	<button class="btn-mini" onclick="ecrirepartition('bs')"><img src="img/note2.png" class="img"></button>
 				    <button class="btn-mini" onclick="ecrirepartition('cs')"><img src="img/note3.png" class="img"></button>
@@ -370,15 +372,14 @@ textarea{
 				    <button class="btn-mini" onclick="ecrirepartition('hs')"><img src="img/note8.png" class="img"></button>
 				    <button class="btn-mini" onclick="ecrirepartition('is')"><img src="img/note9.png" class="img"></button>
 				    <button class="btn-mini" onclick="ecrirepartition('js')"><img src="img/note10.png" class="img"></button>
-				    </br>
 				    <button class="btn-mini" onclick="ecrirepartition('ks')"><img src="img/note11.png" class="img"></button>
 				    <button class="btn-mini" onclick="ecrirepartition('ls')"><img src="img/note12.png" class="img"></button>
 				    <button class="btn-mini" onclick="ecrirepartition('ms')"><img src="img/note13.png" class="img"></button>
-	</ul>
-   </div>
-      <div class="btn-group">
-   <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume14.png" class="img"></button>
-    <ul class="dropdown-menu">
+                </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn dropdown-toggle" data-toggle="dropdown"><img src="img/neume14.png" class="img"></button>
+                <ul class="dropdown-menu">
                   	<button class="btn-mini" onclick="ecrirepartition('as<')"><img src="img/note1.png" class="img"></button>
 				  	<button class="btn-mini" onclick="ecrirepartition('bs<')"><img src="img/note2.png" class="img"></button>
 				    <button class="btn-mini" onclick="ecrirepartition('cs<')"><img src="img/note3.png" class="img"></button>
@@ -388,37 +389,34 @@ textarea{
 				    <button class="btn-mini" onclick="ecrirepartition('gs<')"><img src="img/note7.png" class="img"></button>
 				    <button class="btn-mini" onclick="ecrirepartition('hs<')"><img src="img/note8.png" class="img"></button>
 				    <button class="btn-mini" onclick="ecrirepartition('is<')"><img src="img/note9.png" class="img"></button>
-				    </br>
 				    <button class="btn-mini" onclick="ecrirepartition('js<')"><img src="img/note10.png" class="img"></button>
 				    <button class="btn-mini" onclick="ecrirepartition('ks<')"><img src="img/note11.png" class="img"></button>
 				    <button class="btn-mini" onclick="ecrirepartition('ls<')"><img src="img/note12.png" class="img"></button>
 				    <button class="btn-mini" onclick="ecrirepartition('ms<')"><img src="img/note13.png" class="img"></button>
-	</ul>
-   </div>
-</div>
-
-<br>
-<div>
-<div id="groupe_4" class="btn-mini-group" style="float:left">
-<a >Cl&eacute;s</a><br />
-  <button class="btn-mini" onclick="ecrirepartition('c1')"><img src="img/cle1.png" class="img"></button>
-  <button class="btn-mini" onclick="ecrirepartition('c2')"><img src="img/cle2.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition('c3')"><img src="img/cle3.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition('c4')"><img src="img/cle4.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition('f3')"><img src="img/cle5.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition('f4')"><img src="img/cle6.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition('cb3')"><img src="img/cle7.png" class="img"></button>
-</div>
-
-<div id="groupe_5" class="btn-mini-group" style="float:right">
-<a>Barres de s&eacute;paration</a></br>
-  <button class="btn-mini" onclick="ecrirepartition(',')"><img src="img/barre1.png" class="img"></button>
-  <button class="btn-mini" onclick="ecrirepartition('`')"><img src="img/barre2.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition(';')"><img src="img/barre3.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition(':')"><img src="img/barre4.png" class="img"></button>
-    <button class="btn-mini" onclick="ecrirepartition('::')"><img src="img/barre5.png" class="img"></button>
-</div>
-</div>
+                </ul>
+        </div>
+        <br><br/>
+        <div>
+            <div id="groupe_4" class="btn-mini-group" style="float:left">
+                <a >Cl&eacute;s</a><br />
+                    <button class="btn-mini" onclick="ecrirepartition('c1')"><img src="img/cle1.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('c2')"><img src="img/cle2.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('c3')"><img src="img/cle3.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('c4')"><img src="img/cle4.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('f3')"><img src="img/cle5.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('f4')"><img src="img/cle6.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('cb3')"><img src="img/cle7.png" class="img"></button>
+            </div>
+            <div id="groupe_5" class="btn-mini-group" style="float:right">
+                <a>Barres de s&eacute;paration</a></br>
+                    <button class="btn-mini" onclick="ecrirepartition(',')"><img src="img/barre1.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('`')"><img src="img/barre2.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition(';')"><img src="img/barre3.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition(':')"><img src="img/barre4.png" class="img"></button>
+                    <button class="btn-mini" onclick="ecrirepartition('::')"><img src="img/barre5.png" class="img"></button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Fin de Creat -->
