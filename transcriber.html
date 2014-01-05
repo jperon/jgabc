@@ -72,16 +72,16 @@ textarea{
   float:right;
 }
 </style>
-<form id="pdfForm" target="_blank" method="get" action="http://localhost/gregoriophp/">
+<form id="pdfForm" target="_blank" method="get" action="/gregoriophp/">
   <!--<input type='hidden' name='pdf' value='1'/>-->
   <input type='hidden' name='crop' value='0'/>
 </form>
-<form id="pdfFormDirect" target="_blank" method="post" action="http://localhost/gregoriophp/process.php">
+<form id="pdfFormDirect" target="_blank" method="post" action="/gregoriophp/process.php">
   <input type="hidden" id="pdff_gabc" name="gabc[]"/>
   <input type="hidden" id="pdff_width" name="width" value="148"/>
   <input type="hidden" id="pdff_height" name="height" value="210"/>
   <input type="hidden" id="pdff_croppdf" name="croppdf" value="false"/>
-  <input type="hidden" id="pdff_spacing" value="vichi" name="spacing"/>
+  <input type="hidden" id="pdff_spacing" value="" name="spacing"/>
   <input type="hidden" id="pdff_font" value="GaramondPremierPro" name="font"/>
   <input type="hidden" id="pdff_fontsize" value="12" name="fontsize"/>
   <input type="hidden" id="pdff_fmt" name="fmt" value="pdf"/>

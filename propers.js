@@ -123,7 +123,7 @@ $(function(){
     if(id || selDay=='custom') {
       $includePart.parent('li').removeClass('ui-state-disabled');
       var $txt = $('#txt'+capPart);
-      $('#lbl'+capPart).find('a').attr('href',id? 'http://gregobase.selapa.net/chant.php?id='+id : null);
+      $('#lbl'+capPart).find('a').attr('href',id? '/gregobase/chant.php?id='+id : null);
       $div.show();
       var updateGabc = function(gabc){
         gabc = gabc.replace(/\s+$/,'').replace(/<sp>V\/<\/sp>\./g,'<sp>V/</sp>');
@@ -955,7 +955,7 @@ $(function(){
     if(e && typeof(e.preventDefault)=="function"){
       e.preventDefault();
     }
-    $('#pdfForm').attr('action','http://localhost/gregoriophp/#' + encodeURI(result)).submit();
+    $('#pdfForm').attr('action','/gregoriophp/#' + encodeURI(result)).submit();
   });
   $('#lnkPdfDirect').click(function(e){
     var gabcs=getAllGabc();

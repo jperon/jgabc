@@ -719,7 +719,7 @@ $(function() {
     if(e && typeof(e.preventDefault)=="function"){
       e.preventDefault();
     }
-    $('#pdfForm').attr('action','http://localhost/gregoriophp/#' + encodeURI(result)).submit();
+    $('#pdfForm').attr('action','/gregoriophp/#' + encodeURI(result)).submit();
   });
   $('#lnkPdfDirect').click(function(e){
     var gabcs=[getGabc()];
