@@ -444,7 +444,7 @@ $(function() {
         header = getHeader(gabc);
     if(!header.name) header.name = '';
     if(!header['%font']) header['%font'] = 'LinLibertineO';
-    if(!header['%width']) header['%width'] = '124';
+    if(!header['%width']) header['%width'] = '148';
     return gabc = header + gabc.slice(header.original.length);
   }
   $('#lnkPdf').click(function(e){
