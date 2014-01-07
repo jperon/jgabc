@@ -54,7 +54,3 @@ function ecriretaillepartition(){
 function donwloadPDF(){
 	window.print();
 }
-
-
-
-
