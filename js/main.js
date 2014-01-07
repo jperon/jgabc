@@ -8,9 +8,15 @@ function ecrirenoteryhtme(){
 }
 
 function ecrirepartition(e){
-		document.getElementById("hymngabc").value = document.getElementById("hymngabc").value+ e;
+        var startPos = document.getElementById("hymngabc").selectionStart;
+        var endPos = document.getElementById("hymngabc").selectionEnd;
+        document.getElementById("hymngabc").value = document.getElementById("hymngabc").value.substring(0, startPos)
+            + e
+            + document.getElementById("hymngabc").value.substring(endPos, document.getElementById("hymngabc").value.length);
 		$('#hymngabc').keyup();
-	
+        document.getElementById('hymngabc').focus();
+        var place = startPos + e.length;
+        document.getElementById('hymngabc').setSelectionRange(place, place);
 }
 function visible(){
 	$('#twoBoxes').css('overflow','visible');
