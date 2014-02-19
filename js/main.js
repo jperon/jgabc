@@ -18,6 +18,19 @@ function ecrirepartition(e){
         var place = startPos + e.length;
         document.getElementById('hymngabc').setSelectionRange(place, place);
 }
+
+function ecriretexte(e){
+        var startPos = document.getElementById("hymntext").selectionStart;
+        var endPos = document.getElementById("hymntext").selectionEnd;
+        document.getElementById("hymntext").value = document.getElementById("hymntext").value.substring(0, startPos)
+            + e
+            + document.getElementById("hymntext").value.substring(endPos, document.getElementById("hymntext").value.length);
+		$('#hymntext').keyup();
+        document.getElementById('hymntext').focus();
+        var place = startPos + e.length;
+        document.getElementById('hymntext').setSelectionRange(place, place);
+}
+
 function visible(){
 	$('#twoBoxes').css('overflow','visible');
 }
